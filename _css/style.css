@@ -1,0 +1,205 @@
+/*body {
+    
+}*/
+
+header {
+    background-color: rgb(12, 12, 60);
+}
+
+.box {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav ul {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 0.5s;
+}
+
+nav li:hover {
+    background-color: rgb(99, 99, 121);
+}
+
+nav a {
+    color: rgb(185, 183, 183);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.banner {
+    width: 100%;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.main-section {
+    background-color: #dddddd;
+}
+
+.main-section p {
+    margin: 0 0 1em;
+}
+
+.main-section strong {
+    font-weight: bold;
+}
+
+.main-section em {
+    font-style: italic;
+}
+
+p#mission {
+    text-align: center;
+}
+
+.items {
+    font-style: italic;
+}
+
+.benefits {
+    background: #ffffff;
+}
+
+/*Products page*/
+
+.products {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.products li {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.products li:hover {
+    border-color: #788ff8;
+}
+
+.products li:active {
+    border-color: yellow;
+}
+
+.products li:hover h2 {
+    font-size: 34px;
+}
+
+.products h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.product-price {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.product-description {
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(6, 25, 49);
+    padding: 40px;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+/*Contact page*/
+
+form {      /*40 vertical | 0 horizontal*/
+    margin: 40px 0;
+}
+
+/*putting a comma, it's possible to add configurations for another selector*/
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    /*margin for bottom*/
+    margin: 0 0 10px;
+}
+
+.input-default {
+    display: block;
+    margin: 0 0 20px;
+             /*10 for top and bottom | 25 for both horizontal sides*/
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.submit-button {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background: rgb(170, 94, 2);
+    transform: scale(1.2);
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px 15px;
+}

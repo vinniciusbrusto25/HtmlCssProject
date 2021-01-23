@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact - VIB Sistemas</title>
+        <link rel="stylesheet" type="text/css" href="_css/reset.css">
+        <link rel="stylesheet" type="text/css" href="_css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="box">
+                <h1>
+                    <img src="_images/vib-sistemas-logo-250px-without-bg.png" alt="VIB Sistemas Logo">
+                </h1>
+    
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <label for="namesurname">Name and surname</label>
+                <input type="text" id="namesurname" class="input-default" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-default" required placeholder="youremail@domain.com">
+
+                <label for="telephone">Telephone</label>
+                <input type="tel" id="telephone" class="input-default" required placeholder="(XX) XXXXX-XXXX">
+
+                <label for="message">Message</label>
+                <textarea id="message" cols="30" rows="10" class="input-default" required></textarea>
+
+                <!--Input type radio needs a same name for all itens to be distinct (when it clicks one, unclicks the other)-->
+                <fieldset>
+                    <legend>How do you prefer our contact?</legend>
+                    <label for="radio-email"><input type="radio" name="contact" value="email" id="radio-email">Email</label>
+    
+                    <label for="radio-telefone"><input type="radio" name="contact" value="telephone" id="radio-telefone">Telephone</label>
+    
+                    <label for="radio-whatsapp"><input type="radio" name="contact" value="Whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Which option do you prefer?</legend>
+                    <select name="" id="">
+                        <option value="">Morning</option>
+                        <option value="">Afternoon</option>
+                        <option value="">Evening</option>
+                    </select>
+                </fieldset>
+
+                <!--Instead of having the pair of label and input tags, it is possible to include input inside the label as bellow.-->
+                <label> <input type="checkbox" class="checkbox" checked>Would you like to receive our news by email?</label>
+
+                <input type="submit" value="Submit" class="submit-button">
+
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Hour</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>From Monday to Friday</td>
+                        <td>8am ~ 18pm</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>8am ~ 11am</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <img src="_images/vib-sistemas-logo-250px-without-bg.png" alt="VIB Sistemas Logo">
+            <p class="copyright">&copy; Copyright VIB Sistemas - 2020</p>
+        </footer>
+    </body>
+</html>
