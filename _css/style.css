@@ -1,9 +1,10 @@
-/*body {
-    
-}*/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 
 header {
     background-color: rgb(12, 12, 60);
+    padding: 20px 0;
 }
 
 .box {
@@ -40,6 +41,7 @@ nav a {
     color: rgb(185, 183, 183);
     text-decoration: none;
     padding: 10px;
+    font-size: 22px;
 }
 
 .banner {
@@ -59,11 +61,11 @@ main {
 }
 
 .main-section {
-    background-color: #dddddd;
+    padding: 3em 0;
 }
 
 .main-section p {
-    margin: 0 0 1em;
+    margin: 0 0 2em;
 }
 
 .main-section strong {
@@ -78,19 +80,45 @@ p#mission {
     text-align: center;
 }
 
-.items {
-    font-style: italic;
+.map {
+    /*padding: 3em 0;*/
+}
+
+.map p {
+    margin: 0 0 2em;
+    text-align: center;
 }
 
 .benefits {
-    background: #ffffff;
+    padding: 3em 0;
+}
+
+.benefits-content {
+    width: 640px;
+    margin: 1em auto;
+}
+
+.benefits-list {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items {
+    line-height: 1.5;
+}
+
+.items:first-child {
+    font-weight: bold;
+}
+
+.about-img {
+    width: 60%;
 }
 
 /*Products page*/
 
 .products {
-    width: 940px;
-    margin: 0 auto;
     padding: 50px 0;
 }
 
@@ -147,22 +175,19 @@ footer {
 
 /*Contact page*/
 
-form {      /*40 vertical | 0 horizontal*/
+form {
     margin: 40px 0;
 }
 
-/*putting a comma, it's possible to add configurations for another selector*/
 form label, form legend {
     display: block;
     font-size: 20px;
-    /*margin for bottom*/
     margin: 0 0 10px;
 }
 
 .input-default {
     display: block;
     margin: 0 0 20px;
-             /*10 for top and bottom | 25 for both horizontal sides*/
     padding: 10px 25px;
     width: 50%;
 }
