@@ -48,11 +48,6 @@ nav a {
     width: 100%;
 }
 
-main {
-    width: 940px;
-    margin: 0 auto;
-}
-
 .main-title {
     text-align: center;
     font-size: 2em;
@@ -62,6 +57,9 @@ main {
 
 .main-section {
     padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .main-section p {
@@ -76,12 +74,22 @@ main {
     font-style: italic;
 }
 
+.mission {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
 p#mission {
     text-align: center;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .map {
-    /*padding: 3em 0;*/
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
 }
 
 .map p {
@@ -89,8 +97,14 @@ p#mission {
     text-align: center;
 }
 
+.map-content {
+    width: 940px;
+    margin: 0 auto;
+}
+
 .benefits {
     padding: 3em 0;
+    background: #888888;
 }
 
 .benefits-content {
@@ -112,11 +126,27 @@ p#mission {
     font-weight: bold;
 }
 
+.items::before {
+    content: "🟊";
+}
+
 .about-img {
     width: 60%;
+    opacity: 1;
+    transition: opacity 400ms;
+    box-shadow: 10px 10px 10px 0 rgb(37, 37, 37);
+}
+
+.about-img:hover {
+    opacity: 0.3;
 }
 
 /*Products page*/
+
+.products-section {
+    width: 940px;
+    margin: 0 auto;
+}
 
 .products {
     padding: 50px 0;
@@ -175,6 +205,11 @@ footer {
 
 /*Contact page*/
 
+.main-contact {
+    width: 940px;
+    margin: 0 auto;
+}
+
 form {
     margin: 40px 0;
 }
@@ -227,4 +262,47 @@ thead {
 td, th {
     border: 1px solid black;
     padding: 8px 15px;
+}
+
+@media screen and (max-width: 480px) {
+    .box, .main-section, .mission, .map-content, .benefits-content,
+    .products-section, .products-section, .main-contact {
+		width: auto;
+	}
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav ul {
+        font-size: 5px;
+    }
+
+    nav li {
+        padding: 6px;
+        margin: 3px;
+    }
+
+    .benefits-list, .about-img {
+        width: 100%;
+    }
+
+    .products li {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .main-contact {
+        margin: auto;
+    }
+
+    .form-contact {
+        width: 90%;
+        margin: 10px auto;
+    }
 }
